@@ -1,0 +1,26 @@
+.modalCloser {
+  &:hover > .lineOne,
+  &:hover > .lineTwo {
+    transform: rotate(0deg);
+  }
+
+  .lineOne,
+  .lineTwo {
+    position: absolute;
+    font-size: 1.9rem;
+    font-weight: bold;
+    opacity: 0.85;
+    color: var(--color-black-500);
+    background-color: var(--color-black-500);
+    height: 0.32rem;
+    width: 1.8rem;
+    border-radius: 4px;
+  }
+  .lineOne {
+    transform: rotate(45deg);
+  }
+
+  .lineTwo {
+    transform: rotate(-45deg);
+  }
+}

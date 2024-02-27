@@ -1,0 +1,32 @@
+.error {
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+   
+    .errorIcon {
+        font-size: 1.9rem;
+        animation: error 1.2s ease-in-out infinite;
+
+        @keyframes error {
+            0% {
+                scale: 0;
+
+            }
+            50% {
+                scale: 1;
+
+            }
+            100% {
+                scale: 1 ;
+            }
+            
+        }
+    }
+
+}
+
+.inputError {
+    background-color:rgba(239 68 68 / 0.11);
+    width: fit-content;
+
+}

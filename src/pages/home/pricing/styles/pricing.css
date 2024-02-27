@@ -1,0 +1,14 @@
+.pricing-features .icon {
+    font-size: 4rem;
+    color: var(--color-blue-600);
+
+}
+
+.pricing-features .text {
+    font-size: 1.8rem;
+    color: var(--color-blue-600);
+}
+
+.pricing-card {
+    box-shadow: var(--shadow-lg);
+}

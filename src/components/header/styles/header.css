@@ -1,0 +1,218 @@
+
+.container-nav {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-auto-columns: 1fr;
+  grid-template-columns: 14rem 1fr 14rem;
+  grid-template-rows: auto;
+  grid-row-gap: 16px;
+  grid-column-gap: 16px;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.container-nav .loginBtn {
+  display: flex;
+  justify-content: center;
+  gap: 7px;
+  align-items: center;
+  color: #FAFAFa;
+  font-size: var(--fontsize-simi-md);
+  background-image: linear-gradient(
+    to right bottom,
+    #3e83a4,
+    #357696,
+    #2c6a88,
+    #235e7a,
+    #19526d
+  );
+  outline: none;
+  border: none;
+  border-radius: 100px;
+  border-bottom-style: none;
+  border: 1px solid #1e5e7c;
+  letter-spacing: 0.03325rem;
+  font-weight: 400;
+  padding: 0.8rem 1.2rem;
+  width: 100%;
+  font-size: 1.6rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.container-nav .nav-menu {
+  display: flex;
+  align-items: center;
+  position: static;
+  grid-row-gap: 0.5rem;
+  grid-column-gap: 0.5rem;
+  height: 4.5rem;
+  justify-self: center;
+  align-self: center;
+  border-radius: 100px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 1px 6px 0px;
+}
+.container-nav .nav-menu .nav-list {
+  display: flex;
+  align-items: center;
+  grid-row-gap: 0px;
+  grid-column-gap: 0px;
+  height: 2.65rem;
+}
+.container-nav .nav-menu .nav-list li {
+  display: flex;
+  align-items: center;
+}
+
+.container-nav .menu-icon  {
+  color: #19526D;
+  cursor: pointer;
+  font-size: 22px;
+  z-index: 9999;
+  position: relative;
+}
+.container-nav .menu-icon .icon {
+  color: #19526D;
+  cursor: pointer;
+  font-size: 22px;
+  z-index: 9999;
+  position: relative;
+}
+.container-nav .menu-icon-close  {
+  color: #19526D;
+  cursor: pointer;
+  font-size: 2.8rem;
+  z-index: 9999;
+  position: relative;
+  transition: 0.3s;
+}
+
+.container-nav .menu-icon-close::before {
+  position: absolute;
+  content: "";
+  background-color: transparent;
+  border: 0.19rem solid var(--color-blue-600);
+  width: 100%;
+  height: 100%;
+  border-radius: .5rem;
+
+}
+
+.mobile_nav_items {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.container-nav  .menu-icon {
+display: none;
+}
+
+.container-nav .lang-dropdown  .lang-dropdown-text {
+  font-size: 1.58rem;
+  font-weight: 500;
+ }
+
+ .container-nav .lang-dropdown  .lang-dropdown-icon {
+  font-size: 2rem;
+ }
+/* Start responsive */
+@media screen and (max-width: 850px) {
+  .header {
+    background-color: #fff;
+    padding: 0.989rem;
+    z-index: 9999;
+    width: 100%;
+    position: fixed;
+    height: 6.5rem;
+    padding-top: 0rem; 
+  }
+  .container-nav {
+    display: flex !important;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding-top: 3rem;
+    padding-left: 0rem;
+    padding-right: 1.7rem;
+
+  }
+  .container-nav  .menu-icon {
+    display: block;
+    }
+  .container-nav .loginBtn {
+    color: var(--color-brand-blue-one);
+    background-image: none;
+    border-radius: 0px;
+    border: none;
+    font-size: 0.9475rem;
+    font-weight: 300;
+    height: 2.75rem;
+    padding: 0rem;
+  }
+  .container-nav .loginBtn span {
+    display: none;
+  }
+  .container-nav .nav-menu {
+    z-index: 999;
+  }
+
+  .container-nav .nav-menu .nav-list {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    background-color: #fff;
+    backdrop-filter: blur(4px);
+    width: 100%;
+    height: auto;
+    display: flex;
+    position: absolute;
+    right: 0;
+    margin: auto;
+    padding: 50px 0 30px 0;
+    transition: all 0.5s ease-in-out;
+  }
+  .container-nav .nav-menu .nav-list li {
+    width: 100%;
+    color: #fff;
+  }
+
+  .mobile_nav_items {
+    display: flex;
+    align-items: center;
+    gap: 1.7rem;
+  }
+
+  .container-nav .nav-menu .list-icon {
+   color: #FAFAFA;
+   font-size: 2.7rem;
+  }
+ /* langauge dropdown */
+ .container-nav .lang-dropdown {
+  position: absolute;
+  top: 0.4rem;
+  right: 0.5rem;
+  z-index: 9999;
+  padding-bottom: 0.6rem;
+  border-bottom: 0.1rem solid #f2f2f2;
+  width: 100%;
+ }
+
+ .container-nav .lang-dropdown  .lang-dropdown-text {
+  font-size: 1.35rem;
+ }
+
+ .container-nav .lang-dropdown  .lang-dropdown-icon {
+  font-size: 1.7rem;
+ }
+ .list-link-fst {
+  padding-top: 20px;
+ }
+}
+
+
+
+nav-list.active {
+  top: 0%;
+}

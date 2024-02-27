@@ -1,0 +1,25 @@
+.nodata {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.nodata img {
+  width: 24%;
+  height: auto;
+  margin-bottom: 10px;
+  border-radius: 50%;
+}
+
+.nodata h3 {
+  font-size: calc(var(--fs-text-n-2) + 0.4rem);
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .nodata img {
+    width: 24%;
+  }
+  .nodata h3 {
+    font-size: calc(var(--fs-text-n-3) + 0.08rem);
+  }
+}

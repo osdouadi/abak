@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="/public/images/logos/tab-icon.png"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800&family=Rubik:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="upgrade-insecure-requests"
+    />
+  </head>
+  <script>
+    // Wait for 5 seconds before loading Tidio chat
+    setTimeout(function() {
+      var tidioScript = document.createElement('script');
+      tidioScript.src = "//code.tidio.co/ky31u0u1wkmbbkrmisqbaium048m2fqs.js";
+      tidioScript.async = true;
+      document.body.appendChild(tidioScript);
+    }, 6000); // 6000 milliseconds = 6 seconds
+  </script>
+ 
+  <body dir="rtl">
+    <div id="root"></div>
+    <div id="portal-root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

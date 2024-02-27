@@ -1,0 +1,8 @@
+### Fonts ###
+
+--fs-lg-section-title: 2.35rem;
+--fs-md-section-title: 1.9rem;
+--fs-sm-section-title: 1.7rem;
+// texts
+--fs-text-sm: 1.5rem // paragraph for phones
+--fs-heading-xl: 1.5rem; // heading 1 for phone
